@@ -6,7 +6,6 @@ import Header from './Header';
 import Basket from './Basket';
 import Snack from './Snack';
 import { useAppSelector, useAppDispatch } from '../hook';
-import { Goods } from '../store/goodsSlice';
 import { addToOrderA , Order} from '../store/orderSlice';
 
 const App = () => {

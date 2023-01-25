@@ -32,12 +32,14 @@ const orderSlice = createSlice({
                     if (item.id !== action.payload.id) return item;
 
                     return state.order = [
+                        ...state.order.slice(0, indexInOrder),
                         {
                             id: item.id,
                             name: item.name,
                             price: item.price,
-                            quantity,
-                        }];
+                            quantity
+                        },
+                        ...state.order.slice(indexInOrder + 1)];
                 })
             } else {
                 state.order = [

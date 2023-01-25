@@ -38,7 +38,7 @@ const Basket = (props: IBasket) => {
                     </ListItem>
                 ) : (
                     <>
-                        {order.map((item:Order) => (
+                        {order.map((item: Order) => (
                             <BasketItem
                                 key={item.name}
                                 {...item} />))}

@@ -1,7 +1,6 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { useAppDispatch } from '../hook';
-import { Goods } from '../store/goodsSlice';
-import { Order, addToOrderA, removeFromOrderA } from '../store/orderSlice';
+import { Order } from '../store/orderSlice';
 
 interface IGoodsItem {
     id: string;
